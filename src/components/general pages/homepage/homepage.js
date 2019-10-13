@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../navBar';
 import Footer from '../footer';
+import Cause from '../cause';
 // import {Link} from 'react-router-dom';
 // import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 
@@ -76,84 +77,41 @@ const Homepage = () =>{
                         </header>
                     </div> {/* end row */}
 
-                    <div className="row">
-                        <div className="col-md-4 col-sm-6">
-                            <div className="campaign-card">
-                                <img src="https://placehold.it/1080x718?text=cause-img-1" alt="" className="img-responsive"/>
-                                <div className="campaign-info">
-                                    <h5>Lorem ipsum.</h5>
-                                    <div className="category">
-                                        <span>Health</span>
-                                    </div> {/* end category */}
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div> {/* end campaign-info */}
+                {/* Cause cards */}
+                    <Cause
+                        picture = 'https://placehold.it/1080x718?text=cause-img-1'
+                       caption = 'Lorem ipsum.'
+                       category = 'Health'
+                       description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                       progressBar = '70%'
+                       amountContributed = '$10,500.00'
+                       amountRequired = '$15,000.00'
+                    />
 
-                                <div className="campaign-status">
-                                    <div className="progress-bar"><span style={{width: '10%', backgroundColor:'#27ae60'}}></span></div>
-                                    <p>$1,500.00 of $15,000.00 raised</p>
-                                </div> {/* end campaign-status */}
+                    <Cause
+                        picture = 'https://placehold.it/1080x718?text=cause-img-2'
+                       caption = 'Cool ipsum.'
+                       category = 'Human Right'
+                       description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                       progressBar = '20%'                       
+                       amountContributed = '$1,500.00'
+                       amountRequired = '$15,000.00'
+                    />
 
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Donate Now</a>
-                                    <a href="nothing" className="link-right">Read More</a>
-                                </div> {/* end card-footer */}
+                    <Cause
+                        picture = 'https://placehold.it/1080x718?text=cause-img-3'
+                       caption = 'Ipsum ipsum.'
+                       category = 'Infrastructural Development'
+                       description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                       progressBar = '55%'
+                       amountContributed = '$8,500.00'
+                       amountRequired = '$15,000.00'
+                    /> 
 
-                                <div className="clearfix"></div>
-                            </div> {/* end campaign-card */}
-                        </div>
+                {/* end cause cards */}
+                
+                    <button type="button" classNameName="btn gw-btn" style={{padding: '10px'}}>See all causes</button>
 
-                        <div className="col-md-4 col-sm-6">
-                            <div className="campaign-card">
-                                <img src="https://placehold.it/1080x718?text=cause-img-2" alt="" className="img-responsive"/>
-                                <div className="campaign-info">
-                                    <h5>Lorem ipsum.</h5>
-                                    <div className="category">
-                                        <span>Infrastructural Development</span>
-                                    </div> {/* end category */}
-                                    <p>Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div> {/* end campaign-info */}
-
-                                <div className="campaign-status">
-                                    <div className="progress-bar"><span style={{width: '70%', backgroundColor:'#27ae60'}}></span></div>
-                                    <p>$10,500.00 of $15,000.00 raised</p>
-                                </div> {/* end cam[paign-status] */}
-
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Donate Now</a>
-                                    <a href="nothing" className="link-right">Read More</a>
-                                </div> {/* end card-footer */}
-
-                                <div className="clearfix"></div>
-                            </div> {/* end campaign-card */}
-                        </div>
-
-                        <div className="col-md-4 col-sm-6">
-                            <div className="campaign-card">
-                                <img src="https://placehold.it/1080x718?text=cause-img-3" alt="" className="img-responsive"/>
-                                <div className="campaign-info">
-                                    <h5>Water For Slum Kids</h5>
-                                    <div className="category">
-                                        <span>Human Right</span>
-                                    </div> {/* end category */}
-                                    <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt consectetur adipisicing elit,  ut labore et dolore magna aliqua.</p>
-                                </div> {/* end campaign-info */}
-
-                                <div className="campaign-status">
-                                    <div className="progress-bar"><span style={{width: '30%', backgroundColor:'#27ae60'}}></span></div>
-                                    <p>$3750.00 of $15,000.00 raised</p>
-                                </div> {/* end campaign-status */}
-
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Donate Now</a>
-                                    <a href="nothing" className="link-right">Read More</a>
-                                </div> {/* end card-footer */}
-
-                                <div className="clearfix"></div>
-                            </div> {/* end campaign-card */}
-                        </div>
-
-                        <button type="button" classNameName="btn gw-btn" style={{marginTop: '70px', padding: '10px', marginLeft:'20px'}}>See all causes</button>
-                    </div> {/* end row */}
                 </div> {/* end container */}
             </section>
 
@@ -163,7 +121,7 @@ const Homepage = () =>{
                     <div className="row">
                         <header className="section-header text-center col-md-8 col-md-offset-2">
                             <h3 className="underline">How can you contribute?</h3>
-                            <h4 className="section-intro">At Caritas, everyone has a role to play irrespective of his or her religious, educational, professional,societal, and cultural background.</h4>
+                            <h5 className="section-intro">At Caritas, everyone has a role to play irrespective of his or her religious, educational, professional,societal, and cultural background.</h5>
                         </header>
                     </div> {/* end row */}
 
@@ -247,7 +205,7 @@ const Homepage = () =>{
 
                     <div className="row">
                         <div className="col-md-8">
-                            <h5 className="underline">One of the best charity / fundraising template.</h5>
+                            <h5 className="underline">The best charity / fundraising site.</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                             <div className="col-md-5">
                                 <blockquote>

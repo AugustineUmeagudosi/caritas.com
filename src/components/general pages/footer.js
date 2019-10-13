@@ -11,7 +11,8 @@ const Footer= () => {
                 <div className="row">
     
                     <div className="col-md-4">
-                        <img src="images/logo-light.svg" alt="" width="150" className="mb1"/>
+                        {/* <img src="images/logo-light.svg" alt="" width="150" className="mb1"/> */}
+                        <h3 >Caritas</h3>
                         <p>Lorem ipsum dolor sit amet, adipisicing elit consectetur, sed do eiusmod tempor incididunt ut dolore magna aliqua labore et. Ut enim ad minim veniam dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
     
