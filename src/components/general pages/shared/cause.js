@@ -5,7 +5,7 @@ const Cause = (props) =>{
         <div className="col-md-4 col-sm-6">
             <div className="campaign-card">
                 {/* <img src="https://placehold.it/1080x718?text=cause-img-2" alt="" className="img-responsive"/> */}
-                <img src = {props.picture} alt="" className="img-responsive"/>
+                <img src = {props.picture} alt={props.alt} className="img-responsive"/>
                 <div className="campaign-info">
                     <h5>{props.caption}</h5>
                     <div className="category">

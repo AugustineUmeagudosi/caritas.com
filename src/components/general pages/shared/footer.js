@@ -52,7 +52,10 @@ const Footer= () => {
     
                     <div className="col-md-6 col-sm-6 text-right">
                         <h5>
-                            <i className="fa fa-facebook"></i> <i className="fa fa-twitter"></i> <i className="fa fa-instagram"></i> <i className="fa fa-youtube"></i> <i className="fa fa-google-plus"></i>
+                            <a href='nothing'><i className="fa fa-facebook"></i></a> <span> </span>
+                            <a href='nothing'><i className="fa fa-twitter"></i></a> <span> </span>
+                            <a href='nothing'><i className="fa fa-instagram"></i></a> <span> </span>
+                            <a href='nothing'><i className="fa fa-youtube"></i></a>
                         </h5>
                     </div>
     

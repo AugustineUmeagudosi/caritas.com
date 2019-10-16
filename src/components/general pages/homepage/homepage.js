@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../navBar';
-import Footer from '../footer';
-import Cause from '../cause';
+import NavBar from '../shared/navBar';
+import Footer from '../shared/footer';
+import Cause from '../shared/cause';
 // import {Link} from 'react-router-dom';
 // import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 
@@ -80,6 +80,7 @@ const Homepage = () =>{
                 {/* Cause cards */}
                     <Cause
                         picture = 'https://placehold.it/1080x718?text=cause-img-1'
+                        alt = 'Health picture'
                        caption = 'Lorem ipsum.'
                        category = 'Health'
                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -90,6 +91,7 @@ const Homepage = () =>{
 
                     <Cause
                         picture = 'https://placehold.it/1080x718?text=cause-img-2'
+                        alt = 'uma right picture'
                        caption = 'Cool ipsum.'
                        category = 'Human Right'
                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -100,6 +102,7 @@ const Homepage = () =>{
 
                     <Cause
                         picture = 'https://placehold.it/1080x718?text=cause-img-3'
+                        alt = 'Infrastructural development picture'
                        caption = 'Ipsum ipsum.'
                        category = 'Infrastructural Development'
                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -110,7 +113,7 @@ const Homepage = () =>{
 
                 {/* end cause cards */}
                 
-                    <button type="button" classNameName="btn gw-btn" style={{padding: '10px'}}>See all causes</button>
+                    <button type="button" className="btn gw-btn" style={{padding: '10px'}}>See all causes</button>
 
                 </div> {/* end container */}
             </section>
@@ -316,113 +319,6 @@ const Homepage = () =>{
                     </div> {/* end row */}
                 </div> {/* end container */}
             </section>
-
-            {/* <!-- ========== CHARITY SHOP SECTION ========== --> */}
-            <section className="content-section">
-                <div className="container">
-                    <div className="row">
-                        <header className="section-header text-center col-md-8 col-md-offset-2">
-                            <h3 className="underline">Charity Shop</h3>
-                            <p className="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        </header>
-                    </div> {/* end row */}
-
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6">
-                            <div className="shop-card">
-                                <img src="https://placehold.it/1080x718?text=product-img-3" alt="" className="img-responsive"/>
-                                <div className="shop-info">
-                                    <h5>Hand Painted Dish</h5>
-                                    <div className="category">
-                                        <span>Craft</span>
-                                    </div> {/* end category */}
-                                </div> {/* end shop-info */}
-
-                                <div className="shop-status">
-                                    <p className="pt1">$200.00</p>
-                                </div> {/* end shop-status */}
-
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Buy Now</a>
-                                    <a href="nothing" className="link-right">Details</a>
-                                </div> {/* end card-footer */}
-
-                                <div className="clearfix"></div>
-                            </div> {/* end shop-card */}
-                        </div>
-
-                        <div className="col-md-3 col-sm-6">
-                            <div className="shop-card">
-                                <img src="https://placehold.it/1080x718?text=product-img-2" alt="" className="img-responsive"/>
-                                <div className="shop-info">
-                                    <h5>Woolen Show-piece</h5>
-                                    <div className="category">
-                                        <span>Handmade</span>
-                                    </div> {/* end category */}
-                                </div> {/* end shop-info */}
-
-                                <div className="shop-status">
-                                    <p className="pt1">$40.00</p>
-                                </div> {/* end shop-status */}
-
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Buy Now</a>
-                                    <a href="nothing" className="link-right">Details</a>
-                                </div> {/* end card-footer */}
-
-                                <div className="clearfix"></div>
-                            </div> {/* end shop-card */}
-                        </div>
-
-                        <div className="col-md-3 col-sm-6">
-                            <div className="shop-card">
-                                <img src="https://placehold.it/1080x718?text=product-img-4" alt="" className="img-responsive"/>
-                                <div className="shop-info">
-                                    <h5>Handmade Toy</h5>
-                                    <div className="category">
-                                        <span>Craft</span>
-                                    </div> {/* end category */}
-                                </div> {/* end shop-info */}
-
-                                <div className="shop-status">
-                                    <p className="pt1">$50.00</p>
-                                </div> {/* end shop-status */}
-
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Buy Now</a>
-                                    <a href="nothing" className="link-right">Details</a>
-                                </div> {/* end card-footer */}
-
-                                <div className="clearfix"></div>
-                            </div> {/* end shop-card */}
-                        </div>
-
-                        <div className="col-md-3 col-sm-6">
-                            <div className="shop-card">
-                                <img src="https://placehold.it/1080x718?text=product-img-1" alt="" className="img-responsive"/>
-                                <div className="shop-info">
-                                    <h5>Ladies Handbag</h5>
-                                    <div className="category">
-                                        <span>Handmade</span>
-                                    </div> {/* end category */}
-                                </div> {/* end shop-info */}
-
-                                <div className="shop-status">
-                                    <p className="pt1">$100.00</p>
-                                </div> {/* end shop-status */}
-
-                                <div className="card-footer">
-                                    <a href="nothing" className="link-left">Buy Now</a>
-                                    <a href="nothing" className="link-right">Details</a>
-                                </div> {/* end card-footer */}
-
-                                <div className="clearfix"></div>
-                            </div> {/* end shop-card */}
-                        </div>
-                    </div> {/* end row */}
-                </div> {/* end container */}
-            </section>
-
             <Footer/>
         </div>
     )
