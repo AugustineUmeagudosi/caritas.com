@@ -79,41 +79,47 @@ const Homepage = () =>{
                         <Cause
                             picture = 'https://placehold.it/1080x718?text=cause-img-1'
                             alt = 'Health picture'
-                        caption = 'Lorem ipsum.'
-                        category = 'Health'
-                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                        progressBar = '70%'
-                        amountContributed = '$10,500.00'
-                        amountRequired = '$15,000.00'
+                            caption = 'Lorem ipsum.'
+                            category = 'Health'
+                            description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                            progressBar = '70%'
+                            amountContributed = '$10,500.00'
+                            amountRequired = '$15,000.00'
+                            causeId = '/cause_details'
+                            donateCauseId = '/donate'
                         />
                     </div>
                     <div className="col-md-4 col-sm-6">
                         <Cause
                             picture = 'https://placehold.it/1080x718?text=cause-img-2'
                             alt = 'uma right picture'
-                        caption = 'Cool ipsum.'
-                        category = 'Human Right'
-                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                        progressBar = '20%'                       
-                        amountContributed = '$1,500.00'
-                        amountRequired = '$15,000.00'
+                            caption = 'Cool ipsum.'
+                            category = 'Human Right'
+                            description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                            progressBar = '20%'                       
+                            amountContributed = '$1,500.00'
+                            amountRequired = '$15,000.00'
+                            causeId = '/cause_details'
+                            donateCauseId = '/donate'
                         />
                     </div>
                     <div className="col-md-4 col-sm-6">
                         <Cause
                             picture = 'https://placehold.it/1080x718?text=cause-img-3'
                             alt = 'Infrastructural development picture'
-                        caption = 'Ipsum ipsum.'
-                        category = 'Infrastructural Development'
-                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                        progressBar = '55%'
-                        amountContributed = '$8,500.00'
-                        amountRequired = '$15,000.00'
+                            caption = 'Ipsum ipsum.'
+                            category = 'Infrastructural Development'
+                            description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                            progressBar = '55%'
+                            amountContributed = '$8,500.00'
+                            amountRequired = '$15,000.00'
+                            causeId = '/cause_details'
+                            donateCauseId = '/donate'
                         /> 
                     </div>
                 {/* end cause cards */}
                 
-                    <button type="button" className="btn gw-btn" style={{padding: '10px'}}>See all causes</button>
+                    <a href = '/causes'><button type="button" className="btn gw-btn" style={{padding: '10px'}}>See all causes</button></a>
 
                 </div> {/* end container */}
             </section>
@@ -187,10 +193,10 @@ const Homepage = () =>{
                                 <h6 className="mt1">Experience the "Inner Peace"!</h6>
                             </header>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <blockquote>Charity is a supreme virtue, and the great channel through which the mercy of God is passed onto mankind.
-                                <small className="text-muted"> Conrad Hilton</small>
+                            <blockquote>Think for the people while enjoying life at the same time.
+                                <small className="text-muted"> Chuck Feeney</small>
                             </blockquote>
-                            <a href="nothing" className="btn gw-btn">Join Now</a>
+                            <a href="nothing" className="btn gw-btn">Join the Movement</a>
                         </div>
                     </div> {/* end row */}
                 </div> {/* end container */}

@@ -4,6 +4,7 @@ import {Switch, Route} from 'react-router-dom';
 import Homepage from '../homepage/homepage';
 import AllCauses from '../all_causes';
 import About from '../about/about';
+import CauseDetails from '../cause_details';
 // import HowItWorks from '../how_it_works';
 
 const Content = () => (
@@ -11,6 +12,7 @@ const Content = () => (
         <Route exact path = "/" component = {Homepage} />
         <Route path = "/causes" component = {AllCauses} />
         <Route path ='/about' component = {About} />
+        <Route path ='/cause_details' component = {CauseDetails}/>
     </Switch>
 )
     

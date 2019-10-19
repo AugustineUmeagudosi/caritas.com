@@ -19,8 +19,8 @@ const Cause = (props) =>{
                 </div> {/* end cam[paign-status] */}
 
                 <div className="card-footer">
-                    <a href="nothing" className="link-left">Donate Now</a>
-                    <a href="nothing" className="link-right">Read More</a>
+                    <a href={props.donateCauseId} className="link-left">Donate Now</a>
+                    <a href={props.causeId} className="link-right">Read More</a>
                 </div> {/* end card-footer */}
 
             <div className="clearfix"></div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Link
 } from "react-router-dom";
 
 import Footer from './components/general pages/shared/footer';
@@ -29,11 +28,11 @@ function App() {
 
             <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav navbar-right">
-                    <li><Link to ='/how_it_works'>How it works</Link></li>
-                    <li><Link to ='/causes'>Causes</Link></li>                
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="#login">Login</Link></li>
-                    <li><Link to="#register">Register</Link></li>
+                    <li><a href ='/how_it_works'>How it works</a></li>
+                    <li><a href ='/causes'>Causes</a></li>                
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#register">Register</a></li>
                     <li className="left-separator"><a href="mailto:info@caritas.com"><i className="fa fa-envelope"></i> info@caritas.com</a></li>
                 </ul> {/* end navbar-nav */}
 
