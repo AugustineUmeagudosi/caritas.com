@@ -16,15 +16,15 @@ const Footer= () => {
                         <p>Lorem ipsum dolor sit amet, adipisicing elit consectetur, sed do eiusmod tempor incididunt ut dolore magna aliqua labore et. Ut enim ad minim veniam dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
     
-                    <div className="col-md-2 col-md-offset-2 col-sm-4">
-                        <h5 className="underline mtn">Know More</h5>
+                    <div className="col-md-3 col-md-offset-2 col-sm-6">
+                        <h5 className="underline mtn">Lorem ipsum</h5>
                         <ul>
-                            <li><a href="index">Our Campaigns</a></li>
-                            <li><a href="index">Our Events</a></li>
-                            <li><a href="index">Recent Stories</a></li>
+                            <li><a href="index">Lorem ipsum dolor sit amet</a></li>
+                            <li><a href="index">Lorem ipsum dolor sit amet</a></li>
+                            <li><a href="index">Lorem ipsum dolor sit amet</a></li>
                         </ul>
                     </div>
-    
+{/*     
                     <div className="col-md-2 col-sm-4">
                         <h5 className="underline mtn">Shop Now</h5>
                         <ul>
@@ -32,14 +32,14 @@ const Footer= () => {
                             <li><a href="index">Craft Work</a></li>
                             <li><a href="index">Handmade Cloths</a></li>
                         </ul>
-                    </div>
+                    </div> */}
     
-                    <div className="col-md-2 col-sm-4">
+                    <div className="col-md-3 col-sm-6">
                         <h5 className="underline mtn">Want To Help?</h5>
                         <ul>
                             <li><a href="index">Become Volunteer</a></li>
                             <li><a href="index">Donate Money</a></li>
-                            <li><a href="index">Donate Cloths</a></li>
+                            <li><a href="index">Partner with us</a></li>
                         </ul>
                     </div>
     
@@ -53,9 +53,9 @@ const Footer= () => {
                     <div className="col-md-6 col-sm-6 text-right">
                         <h5>
                             <a href='nothing'><i className="fa fa-facebook"></i></a> <span> </span>
-                            <a href='nothing'><i className="fa fa-twitter"></i></a> <span> </span>
-                            <a href='nothing'><i className="fa fa-instagram"></i></a> <span> </span>
-                            <a href='nothing'><i className="fa fa-youtube"></i></a>
+                            <a href='nothing' style={{marginLeft:'10px'}}><i className="fa fa-twitter"></i></a> <span> </span>
+                            <a href='nothing' style={{marginLeft:'10px'}}><i className="fa fa-instagram"></i></a> <span> </span>
+                            {/* <a href='nothing' style={{marginLeft:'10px'}}><i className="fa fa-youtube"></i></a> */}
                         </h5>
                     </div>
     

@@ -1,6 +1,4 @@
 import React from 'react';
-import NavBar from '../shared/navBar';
-import Footer from '../shared/footer';
 import Cause from '../shared/cause';
 // import {Link} from 'react-router-dom';
 // import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
@@ -9,7 +7,6 @@ const Homepage = () =>{
 
     return ( 
         <div>
-            <NavBar/>
             {/* <!-- ========== HEADER ========== --> */}
             <header className="head" data-parallax="scroll" data-image-src="" data-speed="0.4">
                 <div className="container">
@@ -78,39 +75,42 @@ const Homepage = () =>{
                     </div> {/* end row */}
 
                 {/* Cause cards */}
-                    <Cause
-                        picture = 'https://placehold.it/1080x718?text=cause-img-1'
-                        alt = 'Health picture'
-                       caption = 'Lorem ipsum.'
-                       category = 'Health'
-                       description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                       progressBar = '70%'
-                       amountContributed = '$10,500.00'
-                       amountRequired = '$15,000.00'
-                    />
-
-                    <Cause
-                        picture = 'https://placehold.it/1080x718?text=cause-img-2'
-                        alt = 'uma right picture'
-                       caption = 'Cool ipsum.'
-                       category = 'Human Right'
-                       description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                       progressBar = '20%'                       
-                       amountContributed = '$1,500.00'
-                       amountRequired = '$15,000.00'
-                    />
-
-                    <Cause
-                        picture = 'https://placehold.it/1080x718?text=cause-img-3'
-                        alt = 'Infrastructural development picture'
-                       caption = 'Ipsum ipsum.'
-                       category = 'Infrastructural Development'
-                       description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                       progressBar = '55%'
-                       amountContributed = '$8,500.00'
-                       amountRequired = '$15,000.00'
-                    /> 
-
+                    <div className="col-md-4 col-sm-6">
+                        <Cause
+                            picture = 'https://placehold.it/1080x718?text=cause-img-1'
+                            alt = 'Health picture'
+                        caption = 'Lorem ipsum.'
+                        category = 'Health'
+                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        progressBar = '70%'
+                        amountContributed = '$10,500.00'
+                        amountRequired = '$15,000.00'
+                        />
+                    </div>
+                    <div className="col-md-4 col-sm-6">
+                        <Cause
+                            picture = 'https://placehold.it/1080x718?text=cause-img-2'
+                            alt = 'uma right picture'
+                        caption = 'Cool ipsum.'
+                        category = 'Human Right'
+                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        progressBar = '20%'                       
+                        amountContributed = '$1,500.00'
+                        amountRequired = '$15,000.00'
+                        />
+                    </div>
+                    <div className="col-md-4 col-sm-6">
+                        <Cause
+                            picture = 'https://placehold.it/1080x718?text=cause-img-3'
+                            alt = 'Infrastructural development picture'
+                        caption = 'Ipsum ipsum.'
+                        category = 'Infrastructural Development'
+                        description = 'Consectetur adipisicing elit, sed do lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        progressBar = '55%'
+                        amountContributed = '$8,500.00'
+                        amountRequired = '$15,000.00'
+                        /> 
+                    </div>
                 {/* end cause cards */}
                 
                     <button type="button" className="btn gw-btn" style={{padding: '10px'}}>See all causes</button>
@@ -319,7 +319,6 @@ const Homepage = () =>{
                     </div> {/* end row */}
                 </div> {/* end container */}
             </section>
-            <Footer/>
         </div>
     )
 }
